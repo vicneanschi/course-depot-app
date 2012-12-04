@@ -13,3 +13,24 @@ $ rails new .
 $ git status
 $ git add .
 $ git commit -a -m "Initial commit for my ruby app."
+$ git push origin master
+$ rails g scaffold Product title:string \
+	description:text \
+ 	image_url:string \
+	price:decimal
+
+$ git commit -am "generated the scaffold for Product"
+$ 
+$ 
+$ 
+$ 
+$ 
+$ 
+$ 
+$ 
+$ 
+$ 
+$ 
+$ 
+$ 
+$ 
