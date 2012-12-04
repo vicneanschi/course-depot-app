@@ -21,6 +21,31 @@ $ rails g scaffold Product title:string \
 
 $ git add .
 $ git commit -am "generated the scaffold for Product"
+$ git log
+
+$ git config --global user.name "Valerii Vicneanschi"
+$ git config --global user.email vicneanschi@gmail.com
+$ git commit --amend --reset-author
+
+
+	SHIFT+z   vihod iz VIM redaktora
+	:wq  # vihod s sohraneniem
+	:q
+
+
+$ git log
+$ 
+$ rake db:migrate
+$ 
+$ rails s
+open http://localhost:3000/products 
+
+edit  db/seeds.rb
+
+$ rake db:seed
+$ 
+$ git commit public/images/capital.jpg db/seeds.rb db/schema.rb -m "added a seed"
+$ 
 $ 
 $ 
 $ 

@@ -12,14 +12,14 @@
   </tr>
 
 <% @products.each do |product| %>
-  <tr>
-    <td><%= product.title %></td>
-    <td><%= product.description %></td>
-    <td><%= product.image_url %></td>
+  <tr class="<%=cycle('list-line-odd','list-line-even')%>">
+    <td><b><%= product.title %></b></td>
+    <td><%= product.description.html_safe %> <%= truncate(strip_tags(product.description), :length=>20) %></td>
+    <td><%= image_tag(product.image_url) %></td>
     <td><%= product.price %></td>
-    <td><%= link_to 'Show', product %></td>
-    <td><%= link_to 'Edit', edit_product_path(product) %></td>
-    <td><%= link_to 'Destroy', product, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Show', product %>
+    <%= link_to 'Edit', edit_product_path(product) %>
+    <%= button_to 'Destroy', product, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
