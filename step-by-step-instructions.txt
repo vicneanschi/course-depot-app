@@ -1,0 +1,15 @@
+create new repository on github.com
+
+open git bash from Rails installer
+
+$ mkdir depot 
+
+$ cd depot
+
+$ git clone .
+
+$ rails new .
+
+$ git status
+$ git add .
+$ git commit -a -m "Initial commit for my ruby app."
