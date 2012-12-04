@@ -19,6 +19,7 @@ $ rails g scaffold Product title:string \
  	image_url:string \
 	price:decimal
 
+$ git add .
 $ git commit -am "generated the scaffold for Product"
 $ 
 $ 
