@@ -46,9 +46,9 @@ $ rake db:seed
 $ 
 $ git commit public/images/capital.jpg db/seeds.rb db/schema.rb -m "added a seed"
 $ 
-$ 
-$ 
-$ 
+$ git commit -am "erb file"
+$ git push origin master
+$ rake test
 $ 
 $ 
 $ 
