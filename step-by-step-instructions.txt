@@ -63,3 +63,9 @@ helpers(view)
 validateions
 tests
 GIT
+
+
+
+Recommended book:
+Nat Pryce
+	Growing Object Oriented Software Guided By Tests
