@@ -3,7 +3,7 @@
 one:
   title: MyString
   description: MyText
-  image_url: MyString
+  image_url: MyString.jpg
   price: 9.99
 
 two:
@@ -11,3 +11,9 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+
+alice:
+  title: blab lba balakdjf 'a da"!
+  description: my test description asdlkfj asdjf a;dslkfjwjeoij
+  image_url: asdf.png
+  price: 19.98

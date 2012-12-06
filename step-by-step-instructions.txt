@@ -69,3 +69,11 @@ GIT
 Recommended book:
 Nat Pryce
 	Growing Object Oriented Software Guided By Tests
+	
+	
+	2012-12-06
+	============
+	Validations
+	
+valdidates :title, description, :image_url, :price, :presence => true
+ActiveRecord validations - read documentation
