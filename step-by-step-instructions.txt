@@ -77,3 +77,16 @@ Nat Pryce
 	
 valdidates :title, description, :image_url, :price, :presence => true
 ActiveRecord validations - read documentation
+
+$ rake test:units
+
+$ rails g controller store index
+
+delete public/index.html
+
+@products = Product.order(:price)
+
+default_scope :order=>"title"
+scope :cheap, where("price<5")
+	
+	
