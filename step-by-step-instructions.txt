@@ -96,3 +96,6 @@ rails g scaffold cart
 $ rake db:migrate
 $ rails g scaffold line_item product_id:integer cart_id:integer
 $ rake db:migrate
+$ git branch add_button
+$ git checkout add_button
+$ git merge add_button
