@@ -93,4 +93,6 @@ scope :cheap, where("price<5")
 	2012-12-08
 	==========
 rails g scaffold cart
-rake db:migrate
+$ rake db:migrate
+$ rails g scaffold line_item product_id:integer cart_id:integer
+$ rake db:migrate
