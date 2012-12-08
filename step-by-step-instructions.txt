@@ -90,3 +90,7 @@ default_scope :order=>"title"
 scope :cheap, where("price<5")
 	
 	
+	2012-12-08
+	==========
+rails g scaffold cart
+rake db:migrate
