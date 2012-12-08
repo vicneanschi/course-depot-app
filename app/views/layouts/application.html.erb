@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CourseDepotApp</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+<title>My online store</title>
+<%= stylesheet_link_tag "scaffold" %>
+<%= stylesheet_link_tag "depot", :media => "all" %>
+<%= javascript_include_tag :defaults %>
+<%= csrf_meta_tag %>
 </head>
-<body>
-
+<body id="store" >
+<div id="banner" >
+<%= image_tag("logo.jpg") %>
+<%= @page_title || "MY SHELF" %>
+</div>
+<div id="columns" >
+<div id="side" >
+<a href="/" >Home</a><br />
+<a href="http://www..../faq" >Questions</a><br />
+<a href="http://www..../news" >News</a><br />
+<a href="http://www..../contact" >Contact</a><br />
+</div>
+<div id="main" >
 <%= yield %>
-
+</div>
+</div>
 </body>
 </html>

@@ -1,29 +1,14 @@
-<h1>Listing products</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Image url</th>
-    <th>Price</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @products.each do |product| %>
-  <tr class="<%=cycle('list-line-odd','list-line-even')%>">
-    <td><b><%= product.title %></b></td>
-    <td><%= product.description.html_safe %> <%= truncate(strip_tags(product.description), :length=>20) %></td>
-    <td><%= image_tag(product.image_url) %></td>
-    <td><%= product.price %></td>
-    <td><%= link_to 'Show', product %>
-    <%= link_to 'Edit', edit_product_path(product) %>
-    <%= button_to 'Destroy', product, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+<% if notice %>
+<p id="notice" ><%= notice %></p>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Product', new_product_path %>
+<h1>My Catalog</h1>
+<% @products.each do |product| %>
+<div class="entry" >
+<%= image_tag(product.image_url) %>
+<h3><%= product.title %></h3>
+<%=sanitize product.description %>
+<div class="price_line" >
+<span class="price" ><%= product.price %></span>
+</div>
+</div>
+<% end %>
