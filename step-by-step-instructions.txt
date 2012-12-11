@@ -99,3 +99,22 @@ $ rake db:migrate
 $ git branch add_button
 $ git checkout add_button
 $ git merge add_button
+
+	2012-12-11
+	===========
+db/migrations/
+db/schema.rb
+$ rails g migration AddQtyToLineItems
+		$ git reset --hard HEAD~1
+		git revert <hash>
+@ rake db:migrate
+$ rake routes
+
+FMSC   Fat Model Skinny Controller
+
+
+$ rails console
+
+============
+
+$rails new wmi

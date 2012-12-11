@@ -20,6 +20,12 @@ class CartsController < ApplicationController
       format.json { render json: @cart }
     end
   end
+  
+  def mycart
+    @cart = current_cart
+
+    render :show
+  end
 
   # GET /carts/new
   # GET /carts/new.json
